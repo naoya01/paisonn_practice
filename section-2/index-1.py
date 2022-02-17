@@ -14,6 +14,7 @@ print(c)
 dog_name = "Poch"
 print(dog_name)
 
+# -------------------------
 
 # 四則演算
 a = 7
@@ -43,13 +44,15 @@ b = "World"
 c = a + b
 print(c) #"HelloWorld"
 
-
+# ---------------------
 # Bool値
 a = True
 b = False
 
 print(a)
 print(b)
+
+# ----------------------------
 
 # 比較演算子
 c = 3
@@ -72,6 +75,8 @@ print(i)
 
 j = c != d  # cとdが等しくないか
 print(j)
+
+# -------------------------------------
 
 # 論理演算子
 a = 3
