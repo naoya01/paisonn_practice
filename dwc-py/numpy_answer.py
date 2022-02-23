@@ -152,6 +152,39 @@ data = np.linspace(0,1,11,endpoint=False)[1:]
 print(data)
 
 # ---------------------------
+
 data = np.random.random(10)
 data.sort()
 print(data)
+
+# ---------------------------
+
+data = np.random.random(10)
+data[data.argmax()] = 0
+print(data)
+
+# ---------------------------
+
+data = np.zeros((5,5),[('x',float),('y',float)])
+data['x'],data['y'] = np.meshgrid(np.linspace(0,1,5),np.linspace(0,1,5))
+print(data)
+
+# ---------------------------
+
+data = np.arange(9).reshape(3,3)
+for index,value in np.ndenumerate(data):
+  print(index,value)
+
+# ---------------------------
+
+n = 10
+p = 20
+data = np.zeros((n,n))
+np.put(data, np.random.choice(range(n*n), p, replace=False),1)
+print(data)
+
+# ---------------------------
+
+data = np.random.randint(0,100,100)
+F = np.bincount(data)
+print(F)
